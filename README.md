@@ -289,6 +289,37 @@ What will the code below output to the console and why ?
 [JS BIN](https://jsbin.com/cucaqay/1/edit?js,console)
 
 
+Question 16 -
+
+What is a “closure” in JavaScript? Provide an example.
+
+```js
+/*
+	A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The 	     closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the      	     enclosing function’s scope, and (3) global variables.
+	
+*/
+
+```
+
+[JS BIN](https://jsbin.com/jadoxud/1/edit?js,console)
+
+Question 17 - 
+
+What will be the output of the following code:
+
+```js 
+
+	for (var i = 0; i < 5; i++) {
+	    setTimeout(function() { console.log(i); }, i * 1000 );
+	}
+
+```
+
+Explain your answer. How could the use of closures help here?
+
+[JS BIN](https://jsbin.com/kovezox/1/edit?js,console)
+
+
 
 
 
