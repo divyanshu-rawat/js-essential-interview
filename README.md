@@ -256,6 +256,38 @@ Assuming d is an “empty” object in scope, say:
 
 ```
 
+Question 14 -
+
+What will the code below output to the console and why?
+
+```js
+	var arr1 = "john".split('');
+	var arr2 = arr1.reverse();
+	var arr3 = "jones".split('');
+	arr2.push(arr3);
+	console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+	console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+
+```
+[JS BIN](https://jsbin.com/fejulit/edit?js,console)
+
+Question 15 -
+
+What will the code below output to the console and why ?
+
+```js
+	
+	console.log(1 +  "2" + "2");
+	console.log(1 +  +"2" + "2");
+	console.log(1 +  -"1" + "2");
+	console.log(+"1" +  "1" + "2");
+	console.log( "A" - "B" + "2");
+	console.log( "A" - "B" + 2);
+
+```
+
+[JS BIN](https://jsbin.com/cucaqay/1/edit?js,console)
+
 
 
 
