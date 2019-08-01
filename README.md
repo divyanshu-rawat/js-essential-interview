@@ -63,7 +63,7 @@ What is the significance of, and reason for, wrapping the entire content of a Ja
     namespace, using jQuery.noConflict(). If this has been done, your code can still use $ employing this closure technique, 
     as follows:
 
-(function($) { jQuery plugin code referencing $ } )(jQuery);
+    (function($) { jQuery plugin code referencing $ } )(jQuery);
   
   */
 
@@ -166,5 +166,97 @@ What will the code below output? Explain your answer.
 ```
 
 [JS BIN](https://jsbin.com/tepiguj/1/edit?js,console)
+
+Question 9 -
+
+In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
+
+```js
+    
+    (function() {
+        console.log(1); 
+        setTimeout(function(){console.log(2)}, 1000); 
+        setTimeout(function(){console.log(3)}, 0); 
+        console.log(4);
+    })();
+
+```
+
+[JS BIN](https://jsbin.com/boyuruw/1/edit?js,console)
+
+
+Question 10 - 
+
+Write a simple function (less than 160 characters) that returns a boolean indicating whether or not a string is a palindrome.
+
+[JS BIN](https://jsbin.com/edit?js,console)
+
+Question 11 -
+
+Write a sum method which will work properly when invoked using either syntax below.
+
+```js
+    
+    console.log(sum(2,3));   // Outputs 5
+    console.log(sum(2)(3));  // Outputs 5
+
+```
+
+[JS BIN](https://jsbin.com/piwuvog/3/edit?js,console)
+
+
+Question 12 -
+
+Consider the following code snippet:
+
+```js
+    
+for (var i = 0; i < 5; i++) {
+  var btn = document.createElement('button');
+  btn.appendChild(document.createTextNode('Button ' + i));
+  btn.addEventListener('click', function(){ console.log(i); });
+  document.body.appendChild(btn);
+}
+
+```
+
+(a) What gets logged to the console when the user clicks on “Button 4” and why?
+
+(b) Provide one or more alternate implementations that will work as expected.
+
+
+[JS BIN](https://jsbin.com/gupecin/1/edit?js,console)
+
+
+Question 13 - 
+
+Assuming d is an “empty” object in scope, say:
+
+```js 
+    var d = {};
+  
+```
+
+…what is accomplished using the following code?
+
+```js
+    [ 'zebra', 'horse' ].forEach(function(k) {
+	d[k] = undefined;
+});
+
+```
+
+```js
+    /*
+        The snippet of code shown above sets two properties on the object d. Ideally, any lookup performed on a JavaScript             object with an unset key evaluates to undefined. But running this code marks those properties as “own properties” of           the object.
+
+        This is a useful strategy for ensuring that an object has a given set of properties. Passing this object to                   Object.keys will return an array with those set keys as well (even if their values are undefined).
+    
+    */
+
+```
+
+
+
 
 
