@@ -8,6 +8,7 @@ What is a potential pitfall with using typeof bar === "object" to determine if b
 
 [JS BIN](https://jsbin.com/qeyenuh/edit?js,console).
 
+##
 
 Question 2 -
 What will the code below output to the console and why?
@@ -20,6 +21,8 @@ console.log("a defined? " + (typeof a !== 'undefined'));
 console.log("b defined? " + (typeof b !== 'undefined'));
 ```
 [JS BIN](https://jsbin.com/qacaruh/edit?js,console).
+
+##
 
 Question 3 - 
 
@@ -45,6 +48,7 @@ myObject.func();
 
 [JS BIN](https://jsbin.com/xaxefud/1/edit?js,console)
 
+##
 
 Question 4 - 
 
@@ -69,6 +73,8 @@ What is the significance of, and reason for, wrapping the entire content of a Ja
 
 ```
 
+##
+
 Question 5 -
 
 What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
@@ -90,6 +96,8 @@ What is the significance, and what are the benefits, of including 'use strict' a
     */
 
 ```
+
+##
 
 Question 6 - 
 
@@ -116,6 +124,7 @@ function foo2()
 
 [JS BIN](https://jsbin.com/tajimor/1/edit?js,console)
 
+##
 
 Question 7 - 
 
@@ -154,6 +163,8 @@ A better solution would either be to use value !== value, which would only produ
 
 ```
 
+##
+
 Question 8 - 
 
 What will the code below output? Explain your answer.
@@ -166,6 +177,8 @@ What will the code below output? Explain your answer.
 ```
 
 [JS BIN](https://jsbin.com/tepiguj/1/edit?js,console)
+
+##
 
 Question 9 -
 
@@ -184,12 +197,15 @@ In what order will the numbers 1-4 be logged to the console when the code below 
 
 [JS BIN](https://jsbin.com/boyuruw/1/edit?js,console)
 
+##
 
 Question 10 - 
 
 Write a simple function (less than 160 characters) that returns a boolean indicating whether or not a string is a palindrome.
 
 [JS BIN](https://jsbin.com/edit?js,console)
+
+##
 
 Question 11 -
 
@@ -204,6 +220,7 @@ Write a sum method which will work properly when invoked using either syntax bel
 
 [JS BIN](https://jsbin.com/piwuvog/3/edit?js,console)
 
+##
 
 Question 12 -
 
@@ -227,6 +244,7 @@ for (var i = 0; i < 5; i++) {
 
 [JS BIN](https://jsbin.com/gupecin/1/edit?js,console)
 
+##
 
 Question 13 - 
 
@@ -256,6 +274,8 @@ Assuming d is an “empty” object in scope, say:
 
 ```
 
+##
+
 Question 14 -
 
 What will the code below output to the console and why?
@@ -270,6 +290,8 @@ What will the code below output to the console and why?
 
 ```
 [JS BIN](https://jsbin.com/fejulit/edit?js,console)
+
+##
 
 Question 15 -
 
@@ -288,6 +310,7 @@ What will the code below output to the console and why ?
 
 [JS BIN](https://jsbin.com/cucaqay/1/edit?js,console)
 
+##
 
 Question 16 -
 
@@ -302,6 +325,8 @@ What is a “closure” in JavaScript? Provide an example.
 ```
 
 [JS BIN](https://jsbin.com/jadoxud/1/edit?js,console)
+
+##
 
 Question 17 - 
 
@@ -320,6 +345,8 @@ Explain your answer. How could the use of closures help here?
 [JS BIN](https://jsbin.com/kovezox/1/edit?js,console)
 
 
+##
+
 Question 18 - 
 
 What would the following lines of code output to the console?
@@ -335,6 +362,7 @@ What would the following lines of code output to the console?
 
 [JS BIN](https://jsbin.com/xanifer/1/edit?js,console)
 
+##
 
 Question 19 -
 
@@ -362,6 +390,8 @@ In JavaScript, there are two sets of equality operators. The triple-equal operat
 
 ```
 
+##
+
 Question 20 -
 
 What is the output out of the following code? Explain your answer.
@@ -382,6 +412,7 @@ console.log(a[b]);
 
 [JS BIN](https://jsbin.com/nanepic/2/edit?js,console)
 
+##
 
 Question 21 - 
 
@@ -420,6 +451,7 @@ f(10): returns 10 * f(9), which is 3628800
 */
 ```
 
+##
 
 Question 22 - 
 
@@ -437,5 +469,128 @@ Consider the code snippet below. What will the console output be and why?
 
 [JS BIN](https://jsbin.com/bilaguk/1/edit?js,console)
 
+##
+
+Question 23 - 
+
+What will the following code output to the console and why:
+
+```js
+
+var hero = {
+    _name: 'John Doe',
+    getSecretIdentity: function (){
+        return this._name;
+    }
+};
+
+var stoleSecretIdentity = hero.getSecretIdentity;
+
+console.log(stoleSecretIdentity());
+console.log(hero.getSecretIdentity());
+
+```
+
+What is the issue with this code and how can it be fixed?
+
+[JS BIN](https://jsbin.com/maxepew/edit?js,console).
+
+##
+
+Question 24 - 
+
+Create a function that, given a DOM Element on the page, will visit the element itself and all of its descendents (not just its immediate children). For each element visited, the function should pass that element to a provided callback function.
+
+The arguments to the function should be:
+
+* a DOM element
+* a callback function (that takes a DOM element as its argument)
+
+[JS BIN](https://jsbin.com/yadakob/1/edit?js,console)
+
+##
+
+Question 25 - 
+
+Testing your this knowledge in JavaScript: What is the output of the following code?
+
+```js
+
+	var length = 10;
+	function fn() {
+		console.log(this.length);
+	}
+
+	var obj = {
+	  length: 5,
+	  method: function(fn) {
+	    fn();
+	    arguments[0]();
+	  }
+	};
+
+	obj.method(fn, 1);
+	
+```
+
+[JS BIN](https://jsbin.com/paxutuz/edit?js,console)
+
+##
+
+Question 26 - 
+
+Consider the following code. What will the output be, and why?
+
+```js
+
+(function () {
+    try {
+        throw new Error();
+    } catch (x) {
+        var x = 1, y = 2;
+        console.log(x);
+    }
+    console.log(x);
+    console.log(y);
+})();
+
+```
+
+[JS BIN](https://jsbin.com/zivavup/1/edit?js,console)
+
+##
+
+Question 27 -
+
+What will be the output of this code?
+
+```js
+
+var x = 21;
+var girl = function () {
+    console.log(x);
+    var x = 20;
+};
+girl ();
 
 
+
+
+*/
+
+```
+
+
+```js
+
+/*
+
+Neither 21, nor 20, the result is undefined
+
+It’s because JavaScript initialization is not hoisted.
+
+(Why doesn’t it show the global value of 21? The reason is that when the function is executed, it checks that there’s a local x variable present but doesn’t yet declare it, so it won’t look for global one.)
+
+*/
+
+```
