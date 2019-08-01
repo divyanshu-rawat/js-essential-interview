@@ -3,14 +3,16 @@ Essential JS Interview Questions, that will come handy durning JS Interviews. �
 
 > Here JS BIN Comprises of code snippets, of the following Questions, along with explanation as comments. 📖
 
-Question 1 - 
+**Question 1**
+
 What is a potential pitfall with using typeof bar === "object" to determine if bar is an object? How can this pitfall be avoided?
 
 [JS BIN](https://jsbin.com/qeyenuh/edit?js,console).
 
 ##
 
-Question 2 -
+**Question 2**
+
 What will the code below output to the console and why?
 
 ```js (function(){
@@ -24,7 +26,7 @@ console.log("b defined? " + (typeof b !== 'undefined'));
 
 ##
 
-Question 3 - 
+**Question 3** 
 
 What will the code below output to the console and why?
 
@@ -50,7 +52,7 @@ myObject.func();
 
 ##
 
-Question 4 - 
+**Question 4**
 
 What is the significance of, and reason for, wrapping the entire content of a JavaScript source file in a function block?
 
@@ -75,7 +77,7 @@ What is the significance of, and reason for, wrapping the entire content of a Ja
 
 ##
 
-Question 5 -
+**Question 5**
 
 What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?
 
@@ -99,7 +101,7 @@ What is the significance, and what are the benefits, of including 'use strict' a
 
 ##
 
-Question 6 - 
+**Question 6**
 
 Consider the two functions below. Will they both return the same thing? Why or why not?
 
@@ -126,7 +128,7 @@ function foo2()
 
 ##
 
-Question 7 - 
+**Question 7**
 
 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
 
@@ -165,7 +167,7 @@ A better solution would either be to use value !== value, which would only produ
 
 ##
 
-Question 8 - 
+**Question 8**
 
 What will the code below output? Explain your answer.
 
@@ -180,7 +182,7 @@ What will the code below output? Explain your answer.
 
 ##
 
-Question 9 -
+**Question 9**
 
 In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
 
@@ -199,7 +201,7 @@ In what order will the numbers 1-4 be logged to the console when the code below 
 
 ##
 
-Question 10 - 
+**Question 10** 
 
 Write a simple function (less than 160 characters) that returns a boolean indicating whether or not a string is a palindrome.
 
@@ -207,7 +209,7 @@ Write a simple function (less than 160 characters) that returns a boolean indica
 
 ##
 
-Question 11 -
+**Question 11**
 
 Write a sum method which will work properly when invoked using either syntax below.
 
@@ -222,7 +224,7 @@ Write a sum method which will work properly when invoked using either syntax bel
 
 ##
 
-Question 12 -
+**Question 12**
 
 Consider the following code snippet:
 
@@ -246,7 +248,7 @@ for (var i = 0; i < 5; i++) {
 
 ##
 
-Question 13 - 
+**Question 13**
 
 Assuming d is an “empty” object in scope, say:
 
@@ -276,7 +278,7 @@ Assuming d is an “empty” object in scope, say:
 
 ##
 
-Question 14 -
+**Question 14**
 
 What will the code below output to the console and why?
 
@@ -293,7 +295,7 @@ What will the code below output to the console and why?
 
 ##
 
-Question 15 -
+**Question 15**
 
 What will the code below output to the console and why ?
 
@@ -312,7 +314,7 @@ What will the code below output to the console and why ?
 
 ##
 
-Question 16 -
+**Question 16**
 
 What is a “closure” in JavaScript? Provide an example.
 
@@ -328,7 +330,7 @@ What is a “closure” in JavaScript? Provide an example.
 
 ##
 
-Question 17 - 
+**Question 17** 
 
 What will be the output of the following code:
 
@@ -347,7 +349,7 @@ Explain your answer. How could the use of closures help here?
 
 ##
 
-Question 18 - 
+**Question 18**
 
 What would the following lines of code output to the console?
 
@@ -364,7 +366,7 @@ What would the following lines of code output to the console?
 
 ##
 
-Question 19 -
+**Question 19**
 
 What will be the output when the following code is executed? Explain.
 
@@ -392,7 +394,7 @@ In JavaScript, there are two sets of equality operators. The triple-equal operat
 
 ##
 
-Question 20 -
+**Question 20**
 
 What is the output out of the following code? Explain your answer.
 
@@ -414,7 +416,7 @@ console.log(a[b]);
 
 ##
 
-Question 21 - 
+**Question 21** 
 
 What will the following code output to the console:
 
@@ -453,7 +455,7 @@ f(10): returns 10 * f(9), which is 3628800
 
 ##
 
-Question 22 - 
+**Question 22** 
 
 Consider the code snippet below. What will the console output be and why?
 
@@ -471,7 +473,7 @@ Consider the code snippet below. What will the console output be and why?
 
 ##
 
-Question 23 - 
+**Question 23**
 
 What will the following code output to the console and why:
 
@@ -497,7 +499,7 @@ What is the issue with this code and how can it be fixed?
 
 ##
 
-Question 24 - 
+**Question 24**
 
 Create a function that, given a DOM Element on the page, will visit the element itself and all of its descendents (not just its immediate children). For each element visited, the function should pass that element to a provided callback function.
 
@@ -510,7 +512,7 @@ The arguments to the function should be:
 
 ##
 
-Question 25 - 
+**Question 25** 
 
 Testing your this knowledge in JavaScript: What is the output of the following code?
 
@@ -537,7 +539,7 @@ Testing your this knowledge in JavaScript: What is the output of the following c
 
 ##
 
-Question 26 - 
+**Question 26**
 
 Consider the following code. What will the output be, and why?
 
@@ -560,7 +562,7 @@ Consider the following code. What will the output be, and why?
 
 ##
 
-Question 27 -
+**Question 27**
 
 What will be the output of this code?
 
