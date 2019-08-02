@@ -596,3 +596,123 @@ It’s because JavaScript initialization is not hoisted.
 */
 
 ```
+
+##
+
+**Question 28**
+
+What will this code print?
+
+```js
+
+for (let i = 0; i < 5; i++) {
+  setTimeout(function() { console.log(i); }, i * 1000 );
+}
+
+```
+
+```It will print 0 1 2 3 4, because we use let instead of var here. The variable i is only seen in the for loop’s block scope.```
+
+##
+
+**Question 29**
+
+What do the following lines output, and why?
+
+```js
+
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
+
+```
+
+```js
+
+/*
+
+The first statement returns true which is as expected.
+
+The second returns false because of how the engine works regarding operator associativity for < and >. It compares left to right, so 3 > 2 > 1 JavaScript translates to true > 1. true has value 1, so it then compares 1 > 1, which is false.
+
+*/
+
+```
+
+##
+
+**Question 30**
+
+Imagine you have this code:
+
+```js
+
+var a = [1, 2, 3];
+
+```
+
+a) Will this result in a crash?
+
+```js
+
+a[10] = 99;
+
+```
+
+b) What will this output?
+
+```js
+
+console.log(a[6]);
+
+```
+
+[JS BIN](https://jsbin.com/vonizof/1/edit?js,console)
+
+
+##
+
+**Question 31**
+
+What is the value of typeof undefined == typeof NULL?
+
+```
+    The expression will be evaluated to true, since NULL will be treated as any other undefined variable.
+
+    Note: JavaScript is case-sensitive and here we are using NULL instead of null
+```
+
+##
+
+**Question 32**
+
+What would following code return?
+
+```js
+console.log(typeof typeof 1);
+```
+
+``` typeof 1 will return "number" and typeof "number" will return string. ```
+
+##
+
+**Question 33**
+
+What will the following code output and why?
+
+```js
+var b = 1;
+function outer(){
+   	var b = 2
+    function inner(){
+        b++;
+        var b = 3;
+        console.log(b)
+    }
+    inner();
+}
+outer();
+```
+
+[JS BIN](https://jsbin.com/cicojey/1/edit?js,console)
+
+
