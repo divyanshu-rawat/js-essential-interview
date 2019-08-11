@@ -716,3 +716,68 @@ outer();
 [JS BIN](https://jsbin.com/cicojey/1/edit?js,console)
 
 
+**Question 34**
+
+What will be the output of the code below?
+
+```js
+
+var y = 1;
+  if (function f(){}) {
+    y += typeof f;
+  }
+  console.log(y);
+
+
+```
+
+[JS BIN](https://jsbin.com/modoru/1/edit?js,console)
+
+
+**Question 35**
+
+What is the drawback of creating true private methods in JavaScript?
+
+```
+
+One of the drawbacks of creating true private methods in JavaScript is that they are very memory-inefficient, as a new copy of the method would be created for each instance.
+
+```
+
+[JS BIN](https://jsbin.com/fuciced/edit?js,console)
+
+
+**Question 36**
+
+Write a mul function which will produce the following outputs when invoked?
+
+```js
+
+console.log(mul(2)(3)(4)); // output : 24 
+console.log(mul(4)(3)(4)); // output : 48
+
+```
+
+
+[JS BIN](https://jsbin.com/yotadih/1/edit?js,console)
+
+
+**Question 37**
+
+What will be the output of the code below?
+
+```js
+
+var bar = true;
+console.log(bar + 0);   
+console.log(bar + "xyz");  
+console.log(bar + true);  
+console.log(bar + false);   
+
+```
+
+[JS BIN](https://jsbin.com/tojiyuv/1/edit?js,console)
+
+
+
+
