@@ -779,5 +779,43 @@ console.log(bar + false);
 [JS BIN](https://jsbin.com/tojiyuv/1/edit?js,console)
 
 
+**Question 38**
+
+What is the difference between the function declarations below?
+
+```js
+
+var foo = function(){ 
+    // Some code
+}; 
+
+function bar(){ 
+    // Some code
+}; 
+
+```
+
+*The main difference is the function foo is defined at run-time whereas function bar is defined at parse time. *
+
+
+**Question 39**
+
+What will be the output of code below?
+
+```js
+var salary = "1000$";
+
+ (function () {
+     console.log("Original salary was " + salary);
+
+     var salary = "5000$";
+
+     console.log("My New Salary " + salary);
+})();
+
+```
+
+[JS BIN](https://jsbin.com/sizeqes/1/edit?js,console)
+
 
 
